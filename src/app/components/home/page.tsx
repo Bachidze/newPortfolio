@@ -22,7 +22,7 @@ export default function MainPage() {
           </motion.h1>
           <motion.p
             initial={{
-              y:'-200%'
+              y:'-100%'
             }}
             whileInView={{
               y:0
@@ -96,7 +96,7 @@ export default function MainPage() {
           <div className="mt-12">
             <motion.h1
             initial={{
-              y:'-300%'
+              y:'-200%'
             }}
             whileInView={{
               y:0
