@@ -76,7 +76,9 @@ export default function Navbar() {
             className="border w-[50%]"
           />
         </section>
-        <motion.section
+
+        <section className="max-w-[1920px] relative">
+        <motion.div
           animate={{ y: show ? 10 : '-200%' }}
           transition={{ duration: 1, type: 'spring' }}
           initial={{
@@ -85,7 +87,8 @@ export default function Navbar() {
           whileInView={{
             opacity:1
           }}
-          className="flex max-w-[1920px] absolute right-[19px]  flex-col items-end text-center bg-[#33323D] pt-10 pb-10 pl-20 pr-20 z-50 md:right-[39px] xl:right-[75px] xl:pt-16 xl:pb-16"
+          
+          className="flex max-w-[1920px] absolute  right-0 flex-col items-end text-center bg-[#33323D] pt-10 pb-10 pl-20 pr-20 z-50  xl:pt-16 xl:pb-16"
         >
           <motion.nav
           initial={{
@@ -102,7 +105,8 @@ export default function Navbar() {
             <Link href={"/portfolio"}><h2 className="text-[12px] leading-[14.1px]">PORTFOLIO</h2></Link>
             <Link href={"/contact"}><h2 className="text-[12px] leading-[14.1px]">CONTACT US</h2></Link>
           </motion.nav>
-        </motion.section>
+        </motion.div>
+        </section>
       </header>
     </>
   );

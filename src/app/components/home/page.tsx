@@ -9,26 +9,26 @@ export default function MainPage() {
         <section>
           <motion.h1
             initial={{
-              y:'-100%'
+              y:'-300%'
             }}
             whileInView={{
               y:0
             }}
             transition={{
-              duration:.7
+              duration:2
             }}
           className="text-[40px] font-bold leading-[42px] tracking-wide">
             Get in Touch
           </motion.h1>
           <motion.p
             initial={{
-              x:'-100%'
+              y:'-200%'
             }}
             whileInView={{
-              x:0
+              y:0
             }}
             transition={{
-              duration:1.2
+              duration:2
             }}
           className="mt-6 text-[15px] leading-[30px] text-[#33323D] break-all sm:mt-[50px]">
             I’d love to hear about what you’re working on and how I could help.
@@ -45,13 +45,13 @@ export default function MainPage() {
           <div className="mt-14">
             <motion.h1
               initial={{
-                y:'-100%'
+                y:'-300%'
               }}
               whileInView={{
                 y:0
               }}
               transition={{
-                duration:.7
+                duration:2
               }}
             className="text-[40px] font-bold leading-[42px] tracking-wider">
               Experience
@@ -62,13 +62,13 @@ export default function MainPage() {
               <ul className="flex flex-col gap-5">
                 <motion.li
                   initial={{
-                    x: "-30%",
+                    y: "-400%",
                   }}
                   whileInView={{
-                    x: 0,
+                    y: 0,
                   }}
                   transition={{
-                    duration: 1
+                    duration:2
                   }}
                 className="list-disc">
                   I recently completed a comprehensive 10-month module at
@@ -76,13 +76,13 @@ export default function MainPage() {
                 </motion.li>
                 <motion.li
                   initial={{
-                    x: "-30%",
+                    y: "-300%",
                   }}
                   whileInView={{
-                    x: 0,
+                    y: 0,
                   }}
                   transition={{
-                    duration: 1,
+                    duration:2
                   }}
                 className="list-disc">
                   I worked at Webdoors as a Junior React/Next developer for a
@@ -96,13 +96,13 @@ export default function MainPage() {
           <div className="mt-12">
             <motion.h1
             initial={{
-              y:'-50%'
+              y:'-300%'
             }}
             whileInView={{
               y:0
             }}
             transition={{
-              duration:.7
+              duration:2
             }}
             className="text-[40px] font-bold leading-[42px] tracking-widest">
               Skills
