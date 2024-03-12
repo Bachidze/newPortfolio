@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { motion, useAnimation } from 'framer-motion';
 import React, { useState } from "react";
-import { transform } from "next/dist/build/swc";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);

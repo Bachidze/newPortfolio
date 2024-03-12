@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Footer from "../Footer/Footer";
 
 export default function MainPage() {
   return (
@@ -9,28 +10,30 @@ export default function MainPage() {
         <section>
           <motion.h1
             initial={{
-              y:'-300%'
+              y: "-300%",
             }}
             whileInView={{
-              y:0
+              y: 0,
             }}
             transition={{
-              duration:2
+              duration: 2,
             }}
-          className="text-[40px] font-bold leading-[42px] tracking-wide">
+            className="text-[40px] font-bold leading-[42px] tracking-wide"
+          >
             Get in Touch
           </motion.h1>
           <motion.p
             initial={{
-              y:'-70%'
+              y: "-70%",
             }}
             whileInView={{
-              y:0
+              y: 0,
             }}
             transition={{
-              duration:2
+              duration: 2,
             }}
-          className="mt-6 text-[15px] leading-[30px] text-[#33323D] break-all sm:mt-[50px]">
+            className="mt-6 text-[15px] leading-[30px] text-[#33323D] break-all sm:mt-[50px]"
+          >
             I’d love to hear about what you’re working on and how I could help.
             I’m currently looking for a new role and am open to a wide range of
             opportunities. My preference would be to find a position in any
@@ -45,15 +48,16 @@ export default function MainPage() {
           <div className="mt-14">
             <motion.h1
               initial={{
-                y:'-300%'
+                y: "-300%",
               }}
               whileInView={{
-                y:0
+                y: 0,
               }}
               transition={{
-                duration:2
+                duration: 2,
               }}
-            className="text-[40px] font-bold leading-[42px] tracking-wider">
+              className="text-[40px] font-bold leading-[42px] tracking-wider"
+            >
               Experience
             </motion.h1>
           </div>
@@ -68,9 +72,10 @@ export default function MainPage() {
                     y: 0,
                   }}
                   transition={{
-                    duration:2
+                    duration: 2,
                   }}
-                className="list-disc">
+                  className="list-disc"
+                >
                   I recently completed a comprehensive 10-month module at
                   Re:Educate
                 </motion.li>
@@ -82,9 +87,10 @@ export default function MainPage() {
                     y: 0,
                   }}
                   transition={{
-                    duration:2
+                    duration: 2,
                   }}
-                className="list-disc">
+                  className="list-disc"
+                >
                   I worked at Webdoors as a Junior React/Next developer for a
                   year.
                 </motion.li>
@@ -95,16 +101,17 @@ export default function MainPage() {
         <section>
           <div className="mt-12">
             <motion.h1
-            initial={{
-              y:'-200%'
-            }}
-            whileInView={{
-              y:0
-            }}
-            transition={{
-              duration:2
-            }}
-            className="text-[40px] font-bold leading-[42px] tracking-widest">
+              initial={{
+                y: "-200%",
+              }}
+              whileInView={{
+                y: 0,
+              }}
+              transition={{
+                duration: 2,
+              }}
+              className="text-[40px] font-bold leading-[42px] tracking-widest"
+            >
               Skills
             </motion.h1>
           </div>
@@ -286,39 +293,50 @@ export default function MainPage() {
         </section>
         <section className="mt-6 sm:mt-20">
           <div className="flex gap-4">
-            <motion.img 
-             initial={{
-              x: "-250%",
-            }}
-            whileInView={{
-              x: 0,
-            }}
-            transition={{
-              duration: 0.7,
-            }}
-            src="/github.svg" alt="Github" />
-            <motion.img 
-             initial={{
-              x: "-300%",
-            }}
-            whileInView={{
-              x: 0,
-            }}
-            transition={{
-              duration: 0.7,
-            }}
-            src="/twitter.svg" alt="Twitter" />
-            <motion.img 
-             initial={{
-              x: "-350%",
-            }}
-            whileInView={{
-              x: 0,
-            }}
-            transition={{
-              duration: 0.7,
-            }}
-            src="/linkedin.svg" alt="Linkdein" />
+            <a href="https://github.com/Bachidze">
+              <motion.img
+                initial={{
+                  x: "-150%",
+                }}
+                whileInView={{
+                  x: 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                }}
+                src="/github.svg"
+                alt="Github"
+              />
+            </a>
+
+            <motion.img
+              initial={{
+                x: "-300%",
+              }}
+              whileInView={{
+                x: 0,
+              }}
+              transition={{
+                duration: 0.7,
+              }}
+              src="/twitter.svg"
+              alt="Twitter"
+            />
+            <a href="https://www.linkedin.com/in/giorgi-bachidze-11b68426b/">
+              <motion.img
+                initial={{
+                  x: "-350%",
+                }}
+                whileInView={{
+                  x: 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                }}
+                src="/linkedin.svg"
+                alt="Linkdein"
+              />
+            </a>
           </div>
         </section>
       </main>
@@ -326,7 +344,7 @@ export default function MainPage() {
         <section className="flex w-[90%] m-auto justify-between mb-8">
           <motion.div
             initial={{ y: 50 }}
-            whileInView={{ y: 0}}
+            whileInView={{ y: 0 }}
             transition={{ duration: 1.5 }}
             className="border w-[50%]"
           />
@@ -338,6 +356,7 @@ export default function MainPage() {
           />
         </section>
       </footer>
+      <Footer/>
     </>
   );
 }
