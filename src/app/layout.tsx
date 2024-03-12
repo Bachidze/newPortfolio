@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {  Public_Sans, Ibarra_Real_Nova } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Cursor from "./components/Cursor/Cursor";
 
 
 const publicSans = Public_Sans({ subsets:['latin'],weight:['400','500','600','700']})
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={` ${publicSans.className} ${ibra.className}`}>
         <Navbar />
+        <Cursor />
         {children}
       </body>
     </html>
