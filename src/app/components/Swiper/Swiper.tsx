@@ -15,9 +15,9 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
   useEffect(() => {
     const updateSlidesPerView = () => {
       if (window.innerWidth >= 1000) {
-        setSlidesPerView(3.2);
+        setSlidesPerView(2.7);
       } else {
-        setSlidesPerView(1.6);
+        setSlidesPerView(1.2);
       }
     };
 
@@ -32,7 +32,7 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
 
   return (
 <>
-    <section className='mt-12 mb-24'>
+    <section className='mt-12 mb-24 w-[90%] m-auto'>
         
     <Swiper
       autoplay={{ delay: 2500 }}
@@ -44,16 +44,16 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <img className='min-w-[250px] h-[200px] rounded-xl md:min-w-[350px] xl:w-[450px] xl:h-[300px]' src="/preview.jpg" alt="" />
+        <img className='min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/preview.jpg" alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='min-w-[250px] h-[200px] rounded-xl md:min-w-[350px] xl:w-[450px] xl:h-[300px]' src="/galleryslideshow.jpg" alt="" />
+        <img className='min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/galleryslideshow.jpg" alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='min-w-[250px] h-[200px] rounded-xl md:min-w-[350px] xl:w-[450px] xl:h-[300px]' src="/entertaiment.jpg" alt="" />
+        <img className='min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/entertaiment.jpg" alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='min-w-[250px] h-[200px] rounded-xl md:min-w-[350px] xl:w-[450px] xl:h-[300px]' src="/desktop-preview.jpg" alt="" />
+        <img className='min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/desktop-preview.jpg" alt="" />
       </SwiperSlide>
     </Swiper>
     </section>
