@@ -44,16 +44,16 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <img className='w-[400px] h-[200px] rounded-xl xl:w-[450px] xl:h-[300px]' src="/preview.jpg" alt="" />
+        <img className='min-w-[250px] h-[200px] rounded-xl md:min-w-[350px] xl:w-[450px] xl:h-[300px]' src="/preview.jpg" alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[200px] rounded-xl xl:w-[450px] xl:h-[300px]' src="/galleryslideshow.jpg" alt="" />
+        <img className='min-w-[250px] h-[200px] rounded-xl md:min-w-[350px] xl:w-[450px] xl:h-[300px]' src="/galleryslideshow.jpg" alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[200px] rounded-xl xl:w-[450px] xl:h-[300px]' src="/entertaiment.jpg" alt="" />
+        <img className='min-w-[250px] h-[200px] rounded-xl md:min-w-[350px] xl:w-[450px] xl:h-[300px]' src="/entertaiment.jpg" alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[200px] rounded-xl xl:w-[450px] xl:h-[300px]' src="/desktop-preview.jpg" alt="" />
+        <img className='min-w-[250px] h-[200px] rounded-xl md:min-w-[350px] xl:w-[450px] xl:h-[300px]' src="/desktop-preview.jpg" alt="" />
       </SwiperSlide>
     </Swiper>
     </section>
