@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Footer from "../Footer/Footer";
 
 export default function MainPage() {
   return (
@@ -356,7 +355,6 @@ export default function MainPage() {
           />
         </section>
       </footer>
-      <Footer/>
     </>
   );
 }

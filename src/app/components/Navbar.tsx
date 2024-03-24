@@ -100,7 +100,7 @@ export default function Navbar() {
             duration:0.5
           }}
           className="flex flex-col gap-8 text-white">
-            <Link href={"/Home"}><h2 className="text-[12px] leading-[14.1px]">HOME</h2></Link>
+            <Link href={"/"}><h2 className="text-[12px] leading-[14.1px]">HOME</h2></Link>
             <Link href={"/portfolio"}><h2 className="text-[12px] leading-[14.1px]">PORTFOLIO</h2></Link>
             <Link href={"/contact"}><h2 className="text-[12px] leading-[14.1px]">CONTACT US</h2></Link>
           </motion.nav>

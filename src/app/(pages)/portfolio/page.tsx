@@ -1,13 +1,11 @@
-import Footer from '@/app/components/Footer/Footer'
-import Transition from '@/app/components/transtionEffect/Transition'
+import Swiper from '@/app/components/Swiper/Swiper'
 import React from 'react'
+
 
 export default function Portfolio() {
   return (
     <>
-    <Transition />
-    <div>Portfolio</div>
-    <Footer />
+    <Swiper />
     </>
   )
 }
