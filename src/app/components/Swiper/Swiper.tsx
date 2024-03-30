@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Link from 'next/link';
 
 
 interface SwiperComponentProps {}
@@ -44,16 +45,19 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <img className='min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/preview.jpg" alt="" />
+        <Link href={'/ecommerce'}>
+        <img className='min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/preview.jpg" alt="Ecommerce" />
+        </Link>
+       
       </SwiperSlide>
       <SwiperSlide>
-        <img className='min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/galleryslideshow.jpg" alt="" />
+        <img className='min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc]  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/galleryslideshow.jpg" alt="Slide" />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/entertaiment.jpg" alt="" />
+        <img className='min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc]  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/entertaiment.jpg" alt="entertainment" />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/desktop-preview.jpg" alt="" />
+        <img className='min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc]  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/desktop-preview.jpg" alt="desktop" />
       </SwiperSlide>
     </Swiper>
     </section>

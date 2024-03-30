@@ -20,7 +20,7 @@ export default function Footer() {
           <Link href={'/'}><img src="/WhieDoubleArrow.svg" alt="Arrow2" /></Link>
         </motion.div>
         <div className="text-center text-white pt-10 pb-10 flex flex-col gap-8">
-          <Link href={"/Home"}>
+          <Link href={"/"}>
             <motion.h2 
             initial={{
                 y:70
