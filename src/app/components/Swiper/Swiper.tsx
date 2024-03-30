@@ -51,7 +51,9 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
        
       </SwiperSlide>
       <SwiperSlide>
+        <Link href={'/gallery'}>
         <img className='min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc]  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/galleryslideshow.jpg" alt="Slide" />
+        </Link>
       </SwiperSlide>
       <SwiperSlide>
         <img className='min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc]  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]' src="/entertaiment.jpg" alt="entertainment" />
