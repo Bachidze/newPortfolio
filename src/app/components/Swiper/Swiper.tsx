@@ -15,8 +15,13 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
 
   useEffect(() => {
     const updateSlidesPerView = () => {
-      if (window.innerWidth >= 1000) {
-        setSlidesPerView(2.7);
+      if (window.innerWidth >= 1600) {
+        setSlidesPerView(3.2);
+      }else if (window.innerWidth >= 1000){
+        setSlidesPerView(2.7)
+      }
+      else if (window.innerWidth >= 600) {
+        setSlidesPerView(2);
       } else {
         setSlidesPerView(1.2);
       }
@@ -24,16 +29,16 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
 
     updateSlidesPerView();
 
-    window.addEventListener("resize", updateSlidesPerView);
+    window.addEventListener('resize', updateSlidesPerView);
 
     return () => {
-      window.removeEventListener("resize", updateSlidesPerView);
+      window.removeEventListener('resize', updateSlidesPerView);
     };
   }, []);
 
   return (
     <>
-      <section className="mt-12 mb-24 w-[90%] m-auto">
+      <section className="mt-12 mb-24 w-[90%] m-auto max-w-[1920px]">
         <Swiper
           autoplay={{ delay: 2500 }}
           modules={[Pagination, Autoplay]}
@@ -66,6 +71,7 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
+            <Link href={"/entertainmentWebApp"}>
             <Image
               className="min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]"
               alt="E-commerce"
@@ -73,8 +79,10 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
               width={300}
               height={200}
             />
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
+            <Link href={'/restAPI'}>
             <Image
               className="min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]"
               alt="E-commerce"
@@ -82,6 +90,18 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
               width={300}
               height={200}
             />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href={'/restAPI'}>
+            <Image
+              className="min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]"
+              alt="E-commerce"
+              src={"/desktop-preview.jpg"}
+              width={300}
+              height={200}
+            />
+            </Link>
           </SwiperSlide>
         </Swiper>
       </section>
