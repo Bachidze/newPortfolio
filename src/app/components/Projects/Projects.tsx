@@ -11,7 +11,7 @@ export default function Projects() {
           </h1>
         </div>
       </section>
-      <section className="mt-12 mb-24 w-[90%] max-w-[1920px] m-auto grid justify-center gap-14   md:grid-cols-2 xl:grid-cols-3 xl:gap-[90px] 2xl:gap-[110px]">
+      <section className="mt-12 mb-24 w-[90%] max-w-[1920px] m-auto grid justify-center gap-14   md:grid-cols-2 xl:grid-cols-3 xl:gap-[90px] 2xl:gap-[90px]">
         <div>
           <Link href={"/ecommerce"}>
             <Image
@@ -40,6 +40,72 @@ export default function Projects() {
               className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
               alt="E-commerce"
               src={"/entertaiment.jpg"}
+              width={320}
+              height={200}
+            />
+          </Link>
+        </div>
+        <div>
+          <Link href={"/restAPI"}>
+            <Image
+              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
+              alt="E-commerce"
+              src={"/desktop-preview.jpg"}
+              width={320}
+              height={200}
+            />
+          </Link>
+        </div>
+        <div>
+          <Link href={"/restAPI"}>
+            <Image
+              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
+              alt="E-commerce"
+              src={"/desktop-preview.jpg"}
+              width={320}
+              height={200}
+            />
+          </Link>
+        </div>
+        <div>
+          <Link href={"/restAPI"}>
+            <Image
+              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
+              alt="E-commerce"
+              src={"/desktop-preview.jpg"}
+              width={320}
+              height={200}
+            />
+          </Link>
+        </div>
+        <div>
+          <Link href={"/restAPI"}>
+            <Image
+              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
+              alt="E-commerce"
+              src={"/desktop-preview.jpg"}
+              width={320}
+              height={200}
+            />
+          </Link>
+        </div>
+        <div>
+          <Link href={"/restAPI"}>
+            <Image
+              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
+              alt="E-commerce"
+              src={"/desktop-preview.jpg"}
+              width={320}
+              height={200}
+            />
+          </Link>
+        </div>
+        <div>
+          <Link href={"/restAPI"}>
+            <Image
+              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
+              alt="E-commerce"
+              src={"/desktop-preview.jpg"}
               width={320}
               height={200}
             />
