@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 export default function page() {
   return (
     <>
@@ -10,10 +11,26 @@ export default function page() {
           </h1>
         </div>
         <div>
-          <img
-            className="min-w-[350px] h-[250px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[500px] md:h-[500px] xl:min-w-[1100px] xl:h-[700px]"
-            src="/preview.jpg"
-            alt="Ecommerce"
+          <Image 
+          className="md:hidden rounded-xl border-2 border-[#dcdcdc]"
+          alt="E-commerce"
+          src={"/preview.jpg"}
+          width={350}
+          height={250}
+          />
+          <Image 
+          className="hidden md:flex xl:hidden rounded-xl border-2 border-[#dcdcdc]"
+          alt="E-commerce"
+          src={"/preview.jpg"}
+          width={670}
+          height={500}
+          />
+          <Image 
+          className="hidden xl:flex rounded-xl border-2 border-[#dcdcdc]"
+          alt="E-commerce"
+          src={"/preview.jpg"}
+          width={1100}
+          height={700}
           />
         </div>
         <div className="text-center mt-8 break-all md:mt-10 md:mb-10 xl:mt-16 xl:mb-14  w-[350px] md:w-[680px] xl:w-[1100px]">

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function MainPage() {
   return (
@@ -33,14 +34,15 @@ export default function MainPage() {
             }}
             className="mt-6 text-[15px] leading-[30px] text-[#33323D] break-all sm:mt-[50px]"
           >
-            I’d love to hear about what you’re working on and how I could help.
-            I’m currently looking for a new role and am open to a wide range of
-            opportunities. My preference would be to find a position in any
-            company. But I’m also happy to hear about opportunites that don’t
-            fit that description. I’m a hard-working and positive person who
-            will always approach each task with a sense of purpose and attention
-            to detail. Please do feel free to check out my online profiles below
-            and get in touch using the form.
+            I&#39;d love to hear about what you&#39;re working on and how I
+            could help. I&#39;m currently looking for a new role and am open to
+            a wide range of opportunities. My preference would be to find a
+            position in any company. But I&#39;m also happy to hear about
+            opportunites that don&#39;t fit that description. I&#39;m a
+            hard-working and positive person who will always approach each task
+            with a sense of purpose and attention to detail. Please do feel free
+            to check out my online profiles below and get in touch using the
+            form.
           </motion.p>
         </section>
         <section>
@@ -292,25 +294,25 @@ export default function MainPage() {
         </section>
         <section className="mt-6 sm:mt-20">
           <div className="flex gap-4">
-            <a href="https://github.com/Bachidze">
-              <motion.img
-                initial={{
-                  x: "-150%",
-                }}
-                whileInView={{
-                  x: 0,
-                }}
-                transition={{
-                  duration: 0.7,
-                }}
-                src="/github.svg"
-                alt="Github"
-              />
-            </a>
-
-            <motion.img
+            <motion.div
               initial={{
-                x: "-300%",
+                x: "-150%",
+              }}
+              whileInView={{
+                x: 0,
+              }}
+              transition={{
+                duration: 1,
+              }}
+            >
+              <a href="https://github.com/Bachidze">
+                <Image alt="Gihub" src={"/github.svg"} height={25} width={25} />
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{
+                x: "-150%",
               }}
               whileInView={{
                 x: 0,
@@ -318,24 +320,37 @@ export default function MainPage() {
               transition={{
                 duration: 0.7,
               }}
-              src="/twitter.svg"
-              alt="Twitter"
-            />
-            <a href="https://www.linkedin.com/in/giorgi-bachidze-11b68426b/">
-              <motion.img
-                initial={{
-                  x: "-350%",
-                }}
-                whileInView={{
-                  x: 0,
-                }}
-                transition={{
-                  duration: 0.7,
-                }}
-                src="/linkedin.svg"
-                alt="Linkdein"
-              />
-            </a>
+            >
+              <a href="https://github.com/Bachidze">
+                <Image
+                  alt="Gihub"
+                  src={"/twitter.svg"}
+                  height={25}
+                  width={25}
+                />
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{
+                x: "-150%",
+              }}
+              whileInView={{
+                x: 0,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
+            >
+              <a href="https://www.linkedin.com/in/giorgi-bachidze-11b68426b/">
+                <Image
+                  alt="Gihub"
+                  src={"/linkedin.svg"}
+                  height={25}
+                  width={25}
+                />
+              </a>
+            </motion.div>
           </div>
         </section>
       </main>

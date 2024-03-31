@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { motion, useAnimation } from 'framer-motion';
 import React, { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -31,14 +32,10 @@ export default function Navbar() {
             duration:2
           }}
           >
-            <Link href={'/'}><motion.img 
-            whileHover={{
-              scale:1.2
-            }}
-            transition={{
-              duration:.5
-            }}
-            src="/DoubleArrow.svg" alt="MainIcon" /></Link>
+            <Link href={'/'}>
+            <Image alt="image" src={"/DoubleArrow.svg"} width={60} height={60} />
+            </Link>
+
           </motion.div>
           <motion.div
           initial={{
@@ -50,15 +47,10 @@ export default function Navbar() {
           transition={{
             duration:2
           }}
+          className="cursor-pointer"
+          onClick={toggleMenu}
           >
-            <motion.img 
-            whileHover={{
-              scale:1.2
-            }}
-            transition={{
-              duration:.5
-            }}
-            className="cursor-pointer" onClick={toggleMenu} src={show ? close : brgr} alt="Hamburger" />
+             <Image src={show ? close : brgr} alt="Hamburger" width={25} height={25} />
           </motion.div>
         </section>
         <section className="flex justify-between">
