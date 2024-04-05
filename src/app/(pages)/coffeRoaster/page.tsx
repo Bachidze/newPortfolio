@@ -44,7 +44,7 @@ export default function CoffeRoaster() {
             to create accounts to save their favorite roast profiles and track
             their roasting history. Educational Resources: Offering educational
             content about coffee roasting techniques, bean varieties, and flavor
-            profiles. To complete the "CoffeeRoaster App" challenge, developers
+            profiles. To complete the &#34;CoffeeRoaster App&#34; challenge, developers
             would need to design and implement the frontend interface using
             HTML, CSS, and JavaScript. They may also need to integrate the
             frontend with backend services or APIs if the app requires dynamic
@@ -61,7 +61,7 @@ export default function CoffeRoaster() {
             <a href="https://github.com/Bachidze/cofferoastersAPP">Code</a>
           </button>
           <button className="border-2 border-[#33323D] pt-[10px] pb-[10px] pl-[62.5px] pr-[62.5px] text-[12px] leading-[14.1px] tracking-[2px] font-normal hover:bg-[#33323D] hover:text-white  duration-700 md:text-[16px] md:pt-5 md:pb-5 xl:pt-8 xl:pb-8 xl:pl-[70px] xl:pr-[70px] xl:text-[22px]">
-            <a href="https://cofferoasters-app.vercel.app/">Live</a>
+            <a href="">Live</a>
           </button>
         </div>
       </main>

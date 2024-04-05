@@ -35,9 +35,9 @@ export default function JobList() {
         <div className="text-center mt-8 break-all md:mt-10 md:mb-10 xl:mt-16 xl:mb-14  w-[350px] md:w-[680px] xl:w-[1100px]">
           <p className="text-[15px] leading-[30px] text-[#33323D] md:text-[17px] md:leading-9 xl:text-[22px] xl:leading-[40px]">
             As of my last update in January 2022, there is not a specific project
-            named "JobListApp" associated with Frontend Mentor. However, it is
-            possible that a "JobListApp" challenge was added to the platform
-            after my last update. If "JobListApp" is indeed a project on
+            named &#34;JobListApp&#34; associated with Frontend Mentor. However, it is
+            possible that a &#34;JobListApp&#34; challenge was added to the platform
+            after my last update. If &#34;JobListApp&#34; is indeed a project on
             Frontend Mentor, it would likely involve creating a web application
             that allows users to view and interact with a list of job postings.
             This could include features such as: Displaying a list of job
