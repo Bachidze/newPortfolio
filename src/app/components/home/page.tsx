@@ -34,7 +34,7 @@ export default function MainPage() {
             }}
             className="mt-6 text-[15px] leading-[30px] text-[#33323D] break-all sm:mt-[50px]"
           >
-            I&#39;d love to hear about what you&#39;re working on and how I
+            My Name Is Giorgi Bachidze, I&#39;d love to hear about what you&#39;re working on and how I
             could help. I&#39;m currently looking for a new role and am open to
             a wide range of opportunities. My preference would be to find a
             position in any company. But I&#39;m also happy to hear about

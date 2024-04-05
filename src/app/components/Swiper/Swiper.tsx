@@ -93,11 +93,11 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href={'/restAPI'}>
+            <Link href={'/passwordGenerator'}>
             <Image
               className="min-w-[300px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[430px] xl:h-[300px]"
               alt="E-commerce"
-              src={"/desktop-preview.jpg"}
+              src={"/paaswordgeneratoimage.jpg"}
               width={300}
               height={200}
             />

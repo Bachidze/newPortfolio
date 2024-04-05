@@ -57,66 +57,33 @@ export default function Projects() {
           </Link>
         </div>
         <div>
-          <Link href={"/restAPI"}>
+          <Link href={"/passwordGenerator"}>
             <Image
               className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
               alt="E-commerce"
-              src={"/desktop-preview.jpg"}
+              src={"/paaswordgeneratoimage.jpg"}
               width={320}
               height={200}
             />
           </Link>
         </div>
         <div>
-          <Link href={"/restAPI"}>
+          <Link href={"/jobList"}>
             <Image
               className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
               alt="E-commerce"
-              src={"/desktop-preview.jpg"}
+              src={"/JobList.jpg"}
               width={320}
               height={200}
             />
           </Link>
         </div>
         <div>
-          <Link href={"/restAPI"}>
+          <Link href={"/coffeRoaster"}>
             <Image
               className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
               alt="E-commerce"
-              src={"/desktop-preview.jpg"}
-              width={320}
-              height={200}
-            />
-          </Link>
-        </div>
-        <div>
-          <Link href={"/restAPI"}>
-            <Image
-              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
-              alt="E-commerce"
-              src={"/desktop-preview.jpg"}
-              width={320}
-              height={200}
-            />
-          </Link>
-        </div>
-        <div>
-          <Link href={"/restAPI"}>
-            <Image
-              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
-              alt="E-commerce"
-              src={"/desktop-preview.jpg"}
-              width={320}
-              height={200}
-            />
-          </Link>
-        </div>
-        <div>
-          <Link href={"/restAPI"}>
-            <Image
-              className="min-w-[320px] h-[200px] rounded-xl border-2 border-[#dcdcdc] md:min-w-[335px] xl:min-w-[400px] xl:h-[300px]"
-              alt="E-commerce"
-              src={"/desktop-preview.jpg"}
+              src={"/cofferoasterphoto.jpg"}
               width={320}
               height={200}
             />
