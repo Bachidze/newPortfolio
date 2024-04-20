@@ -7,11 +7,20 @@ import Image from "next/image";
 export default function Navbar() {
   const [show, setShow] = useState(false);
   const controls = useAnimation();
+  const [active, setActive] = useState(0);
 
   const toggleMenu = () => {
     setShow(!show);
   };
 
+
+  const handleInputClick = (itemNum: number) => {
+    if (active === itemNum) {
+      return
+    } else {
+      setActive(itemNum);
+    }
+  };
   const brgr = "/hamburger.svg";
   const close = "/close.svg";
 
@@ -60,6 +69,61 @@ export default function Navbar() {
                 </Link>
               </motion.div>
           </div>
+          
+          <div className="flex w-[25%] justify-between">
+              <motion.div
+              initial={{
+                x:'-100%'
+              }}
+              whileInView={{
+                x:0
+              }}
+              whileHover={{
+                border:'1px solid black',
+                padding:5
+              }}
+              transition={{
+                duration:0.1
+              }}
+              >
+              <Link  href={"/"}>
+                <h2 style={{color:active === 1 ? 'black' : '', borderBottom:active === 1 ?'2px solid black':'', transition:'.2s'}} onClick={() => handleInputClick(1)} className="text-[18px] leading-[28px] font-medium">HOME</h2>
+              </Link>
+              </motion.div>
+              <motion.div
+              whileHover={{
+                border:'1px solid black',
+                padding:5
+              }}
+              transition={{
+                duration:0.1
+              }}
+              >
+              <Link href={"/portfolio"}>
+                <h2 style={{color:active === 2 ? 'black' : '', borderBottom:active === 2 ?'2px solid black':'', transition:'.2s'}} onClick={() => handleInputClick(2)} className="text-[18px] leading-[28px] font-">PORTFOLIO</h2>
+              </Link>
+              </motion.div>
+              <motion.div
+              initial={{
+                x:'100%'
+              }}
+              whileInView={{
+                x:0
+              }}
+              whileHover={{
+                border:'1px solid black',
+                padding:5
+              }}
+              transition={{
+                duration:0.1
+              }}
+              >
+              <Link href={"/contact"}>
+                <h2 style={{color:active === 3 ? 'black' : '', borderBottom:active === 3 ?'2px solid black':'', transition:'.2s'}} onClick={() => handleInputClick(3)} className="text-[18px] leading-[28px] font-">CONTACT US</h2>
+              </Link>
+              </motion.div>
+          </div>
+
           <motion.div
             initial={{
               y: "-100%",
@@ -70,7 +134,7 @@ export default function Navbar() {
             transition={{
               duration: 2,
             }}
-            className="cursor-pointer"
+            className="cursor-pointer xl:hidden"
             onClick={toggleMenu}
           >
             <Image
@@ -96,7 +160,7 @@ export default function Navbar() {
           />
         </section>
 
-        <section className="max-w-[1920px] relative">
+        <section className="max-w-[1920px] relative xl:hidden">
           <motion.div
             animate={{ y: show ? 10 : "-200%" }}
             transition={{ duration: 1, type: "spring" }}

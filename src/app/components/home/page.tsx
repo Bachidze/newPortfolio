@@ -8,6 +8,21 @@ export default function MainPage() {
     <>
       <main className="w-[90%] max-w-[1920px] m-auto mt-14 mb-8">
         <section>
+          <motion.div
+          initial={{
+            x:'10%'
+          }}
+          whileInView={{
+            x:0
+          }}
+          transition={{
+            duration:1.4
+          }}
+          className="hidden xl:flex relative w-[90%]">
+            <div className="absolute right-0 top-56">
+            <Image className="rounded-full border-2 border-black 2xl:w-[600px] 2xl:h-[600px]" alt="Men" src={"/mainGithubPhoto.jpg"} width={500} height={500} />
+            </div>
+          </motion.div>
           <motion.h1
             initial={{
               y: "-300%",

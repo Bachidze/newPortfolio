@@ -40,7 +40,7 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({}) => {
     <>
       <section className="mt-12 mb-24 w-[90%] m-auto max-w-[1920px]">
         <Swiper
-          autoplay={{ delay: 2500 }}
+          autoplay={{ delay: 2000 }}
           modules={[Pagination, Autoplay]}
           loop
           spaceBetween={50}
